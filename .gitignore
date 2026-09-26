@@ -1,0 +1,8 @@
+bin/
+obj/
+*.zip
+*.user
+.vs/
+# local-only helpers
+Repoint-Profile.ps1
+CLAUDE.md

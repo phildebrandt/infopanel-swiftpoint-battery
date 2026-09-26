@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>InfoPanel.SwiftpointBattery</AssemblyName>
+    <RootNamespace>SwiftpointBatteryPlugin</RootNamespace>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <!-- Locate InfoPanel.Plugins.dll in either Program Files location -->
+  <PropertyGroup>
+    <_PF86>$([System.Environment]::GetEnvironmentVariable('ProgramFiles(x86)'))</_PF86>
+    <InfoPanelDll Condition="Exists('$(ProgramFiles)\InfoPanel\InfoPanel.Plugins.dll')">$(ProgramFiles)\InfoPanel\InfoPanel.Plugins.dll</InfoPanelDll>
+    <InfoPanelDll Condition="'$(InfoPanelDll)' == ''">$(_PF86)\InfoPanel\InfoPanel.Plugins.dll</InfoPanelDll>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="InfoPanel.Plugins">
+      <HintPath>$(InfoPanelDll)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
