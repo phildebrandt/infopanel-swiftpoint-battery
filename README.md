@@ -2,8 +2,9 @@
 
 An [InfoPanel](https://github.com/habibrehmansg/infopanel) plugin that shows your **Swiftpoint Z3**'s battery level, charging state, connection type and active X1 profile on your desk display.
 
-<!-- TODO: screenshot of the panel -->
-<!-- ![Swiftpoint Battery on an InfoPanel display](docs/screenshot.png) -->
+![Swiftpoint Battery on an InfoPanel display](docs/screenshot.png)
+
+*The MOUSE tile (bottom right) shows battery % and the active X1 profile.*
 
 > Unofficial community plugin. Not affiliated with or endorsed by Swiftpoint.
 
