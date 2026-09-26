@@ -7,6 +7,8 @@
     <RootNamespace>SwiftpointBatteryPlugin</RootNamespace>
     <OutputType>Library</OutputType>
     <Version>0.1.0</Version>
+    <!-- Don't embed the local build path (contains the Windows username) in the DLL -->
+    <PathMap>$(MSBuildProjectDirectory)=/_/</PathMap>
   </PropertyGroup>
 
   <!-- Locate InfoPanel.Plugins.dll in either Program Files location -->
