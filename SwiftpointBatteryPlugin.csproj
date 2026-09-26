@@ -6,6 +6,7 @@
     <AssemblyName>InfoPanel.SwiftpointBattery</AssemblyName>
     <RootNamespace>SwiftpointBatteryPlugin</RootNamespace>
     <OutputType>Library</OutputType>
+    <Version>0.1.0</Version>
   </PropertyGroup>
 
   <!-- Locate InfoPanel.Plugins.dll in either Program Files location -->
